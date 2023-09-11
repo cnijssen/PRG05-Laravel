@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    background-color: #f82e40;
+    font-family: "Helvetica", "Arial", sans-serif;
+
+}
+
+.header h1 {
+    position: absolute;
+    color: white;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 40px;
+    margin-left: 2%;
+    margin-top: 20px;
+}
+
+.welcome {
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 5%;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.welcome h1 {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 80px;
+}
+
+.welcome p {
+    font-size: 190%;
+    font-style: italic;
+}
+
+@media screen and (max-width: 1400px) {
+    .welcome p {
+        font-size: 140%;
+        font-style: italic;
+    }
+}
+
+.welcome button{
+    background-color: #a3afe4;
+    margin-left: 10%;
+    margin-top: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 35px;
+    width: 80%;
+    height: 75px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.welcome button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.51);
+    transition: 0.3s;
+}
+
+.product-card {
+    display: flex;
+    justify-content: right;
+}
+
+.product {
+    width: 550px;
+    height: 550px;
+    background-color: rgba(26, 32, 44, 0.11);
+    border-radius: 20px;
+    transition: 0.3s;
+    margin-right: 5%;
+    margin-top: 7%;
+
+}
+
+.product h1 {
+    color: white;
+    margin-left: 5%;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.product img {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15%;
+    width: 80%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product img:hover {
+    transform: scale(1.15);
+    transition: 0.3s;
+}
+
+.product h2 {
+    color: white;
+    margin-top: 10%;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+}
