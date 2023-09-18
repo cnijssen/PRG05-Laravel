@@ -1,0 +1,34 @@
+.title h1{
+    position: inherit;
+    font-weight: Bolder;
+    font-style: italic;
+    font-size: 75px;
+    margin-left: 2%;
+    margin-top: 80px;;
+}
+
+p {
+    margin-top: -20px;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    font-style: italic;
+    font-weight: 100;
+}
+
+span {
+    font-weight: bold;
+    color: #a3afe4;
+    font-size: 20px;
+}
+
+span1 {
+    font-weight: bold;
+    color: #f82e40;
+}
+
+a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #a3afe4;
+    cursor: pointer;
+}

@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ShopController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,20 +20,34 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', [ProductController::class, 'home'])->name('home');
+Route::get('/home', [ShopController::class, 'home'])->name('home');
 
-Route::get('/shop', [ProductController::class, 'shop'])->name('shop');
+Route::get('/shop', [ShopController::class, 'shop'])->name('shop');
 
-Route::get('/shop/{category?}', [ProductController::class, 'shop'])->name('shop');
+Route::get('/shop/{category?}', [ShopController::class, 'shop'])->name('shop');
 
-Route::get('/shop/{product}/view', [ProductController::class, 'view'])->name('view');
+Route::get('/shop/view/{product}', [ShopController::class, 'view'])->name('view');
+
+
+
+Route::get('/about', [ShopController::class, 'about'])->name('about');
+
+
+
+Route::get('/login', [UserController::class, 'login'])->name('login');
+
+Route::get('/register', [UserController::class, 'register'])->name('register');
+
+Route::get('/profile', [UserController::class, 'profile'])->name('profile');
+
+
 
 Route::get('/product/create', [ProductController::class, 'create'])->name('product.create');
 
 Route::post('/product', [ProductController::class, 'store'])->name('product.store');
 
-Route::get('/product/{product}/edit', [ProductController::class, 'edit'])->name('product.edit');
+Route::get('/product/edit/{product}', [ProductController::class, 'edit'])->name('product.edit');
 
-Route::put('/product/{product}/update', [ProductController::class, 'update'])->name('product.update');
+Route::put('/product/update/{product}', [ProductController::class, 'update'])->name('product.update');
 
-Route::delete('/product/{product}/destroy', [ProductController::class, 'destroy'])->name('product.destroy');
+Route::delete('/product/destroy/{product}', [ProductController::class, 'destroy'])->name('product.destroy');

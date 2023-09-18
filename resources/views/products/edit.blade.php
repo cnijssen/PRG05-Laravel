@@ -38,7 +38,7 @@
         </div>
         <div class="insert">
             <label>Price</label>
-            <input type="number" name="price" step="0.01" min="0" autocomplete="off" value="{{$product->price}}" />
+            <input type="number" name="price" step="0.01" min="0" max="99999.99" autocomplete="off" value="{{$product->price}}" />
         </div>
         <div class="insert">
             <label>Gender</label>
@@ -56,8 +56,11 @@
                 <option value="Jordan_1_Mocha_High.png">Air Jordan 1 Mocha High (Update)</option>
                 <option value="Jordan_1_Fragment_High.png">Air Jordan 1 Fragment High (Update)</option>
                 <option value="Jordan_1_Phantom_Low.png">Air Jordan 1 Phantom Low (Update)</option>
+                <option value="Jordan_1_Olive_Low.png">Air Jordan 1 Olive Low (Update)</option>
+                <option value="Jordan_1_Fragment_Low.png">Air Jordan 1 Fragment Low (Update)</option>
                 <option value="AirMax_1_Travis.png">Air Max 1 Baroque Brown (Update)</option>
                 <option value="AirMax_1_Chili.png">Air Max 1 Chili (Update)</option>
+                <option value="AirMax_1_RuggedOrange.png">Air Max 1 Rugged Orange (Update)</option>
             </select>
         </div>
         <div class="save">
@@ -66,7 +69,7 @@
     </form>
 
     <div class="cancel">
-            <button onclick="location.href='{{ route('shop')}}'">Cancel</button>
+            <button onclick="location.href='{{ url()->previous() }}'">Cancel</button>
         </div>
 </body>
 </html>

@@ -7,18 +7,6 @@ use App\Models\Product;
 
 class ProductController extends Controller
 {
-    public function home(Product $product){
-        return view('home', ['product' => $product]);
-    }
-
-    public function shop(){
-        $products = Product::all();
-        return view('shop', ['products' => $products]);
-    }
-
-    public function view(Product $product){
-        return view('view', ['product' => $product]);
-    }
 
     public function create(){
         return view('products.create');
@@ -37,7 +25,7 @@ class ProductController extends Controller
 
         $newProduct = Product::create($data);
 
-        return redirect(route('shop'));
+        return redirect(route('profile'));
 
     }
 
@@ -58,11 +46,11 @@ class ProductController extends Controller
 
         $product->update($data);
 
-        return redirect(route('shop'))->with('success', 'Product Updated Succesfully');
+        return redirect(route('profile'));
     }
 
     public function destroy(Product $product){
         $product->delete();
-        return redirect(route('shop'))->with('success', 'Product Deleted Succesfully');
+        return redirect(route('profile'));
     }
 }

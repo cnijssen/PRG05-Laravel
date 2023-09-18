@@ -1,6 +1,4 @@
 body {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: "Helvetica", "Arial", sans-serif;
     background-color: #f82e40;
@@ -12,9 +10,9 @@ h1 {
     color: white;
     font-weight: bolder;
     font-style: italic;
-    font-size: 40px;
+    font-size: 30px;
     margin-left: 2%;
-    margin-top: 20px;
+    margin-top: 90px;
 }
 
 .insert {
@@ -37,15 +35,12 @@ h1 {
     margin-top: 20px;
 }
 
-.insert
-input[type="text"],
-input[type="number"],
-select {
+.insert input[type="email"], input[type="password"], input[type="text"], select {
     background-color: rgba(26, 32, 44, 0.11);
     color: white;
     font-weight: bolder;
     font-style: italic;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     width: 60%;
     padding: 10px;
@@ -55,14 +50,15 @@ select {
     border-radius: 10px;
 }
 
-.save input{
+.login input{
     position: absolute;
-    background-color: #a3afe4;
-    margin-left: 55%;
+    background-color: #BFC6EC;
+    margin-left: 5%;
     margin-top: 3%;
     color: white;
     font-weight: bold;
     font-size: 20px;
+    font-style: normal;
     border-radius: 35px;
     width: 35%;
     height: 75px;
@@ -71,32 +67,40 @@ select {
     transition: 0.3s;
 }
 
-.save input:hover {
+.login input:hover {
     transform: scale(1.1);
     background-color: #85c712;
     box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
     transition: 0.3s;
 }
 
-.cancel button {
+h2 {
+    display: absolute;
+    font-size: 15px;
+    margin-top: 15%;
+    text-align: center;
+}
+
+.register button{
     position: absolute;
-    background-color: #a3afe4;
-    margin-left: 10%;
-    margin-top: 3%;
+    background-color: #BFC6EC;
     color: white;
     font-weight: bold;
     font-size: 20px;
     border-radius: 35px;
-    width: 35%;
-    height: 75px;
+    width: 20%;
+    height: 50px;
+    margin-left: 40%;
     border: none;
     cursor: pointer;
     transition: 0.3s;
 }
 
-.cancel button:hover {
+.register button:hover {
     transform: scale(1.1);
-    background-color: red;
+    background-color: #a3afe4;
     box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
     transition: 0.3s;
 }
+
+

@@ -1,0 +1,112 @@
+*::-webkit-scrollbar {
+    display: none;
+}
+
+
+body {
+    margin: 0;
+    background-color: white;
+    font-family: "Helvetica", "Arial", sans-serif;
+
+}
+
+.header {
+    position: fixed;
+    z-index: 10;
+    background-color: #f82e40;
+    height: 60px;
+    width: 100%;
+    padding-top: 20px;
+    margin-top: -80px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.header h1 {
+    position: absolute;
+    color: white;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 40px;
+    margin-left: 2%;
+    margin-top: -1px;
+}
+
+.links {
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 10%;
+}
+
+.links a {
+    text-decoration: none;
+    position: relative;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    transition: 0.2s;
+    padding-left: 5%;
+    cursor: pointer;
+}
+
+.links a:hover{
+    color: #BFC6EC;
+    transition: 0.3s;
+}
+
+.logo {
+    display: flex;
+    justify-content: left;
+}
+
+.logo img{
+    position: absolute;
+    height: 50px;
+    margin-top: -5px;
+    transition: 0.3s;
+    margin-left: 365px;
+}
+
+.logo img:hover {
+    transform: scale(1.15);
+    transition: 0.3s;
+}
+
+.profile img {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 3px solid rgba(255, 255, 255, 0);
+    display: block;
+    margin-left: 94%;
+    margin-top: -40px;
+    margin-bottom: 115px;
+    transition: 0.3s;
+
+}
+
+.profile img:hover {
+    cursor: pointer;
+    border: 3px solid #BFC6EC;
+    transition: 0.3s;
+}
+
+.footer {
+    background-color: #f82e40;
+    height: 180px;
+    padding-top: 20px;
+}
+
+.footer h1{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.footer p {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
