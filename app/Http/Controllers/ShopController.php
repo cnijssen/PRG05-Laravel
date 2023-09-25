@@ -8,6 +8,7 @@ use App\Models\Product;
 class ShopController extends Controller
 {
     public function home(Product $product){
+
         return view('home', ['product' => $product]);
     }
 
@@ -15,6 +16,8 @@ class ShopController extends Controller
     public function shop(Request $request)
 {
     $products = Product::query();
+
+    $products->where('status', 1);
 
     if ($request->has('category')) {
         $categories = $request->input('category');
@@ -42,7 +45,7 @@ class ShopController extends Controller
         });
     }
 
-    $filteredProducts = $products->orderByDesc('created_at')->get();
+    $filteredProducts = $products->orderByDesc('created_at')->paginate(12); 
 
     $request->flash();
 

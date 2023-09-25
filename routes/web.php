@@ -16,15 +16,11 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::get('/home', [ShopController::class, 'home'])->name('home');
 
 Route::get('/shop', [ShopController::class, 'shop'])->name('shop');
 
-Route::get('/shop/{category?}', [ShopController::class, 'shop'])->name('shop');
+Route::get('/shop/{category?}', [ShopController::class, 'shop']);
 
 Route::get('/shop/view/{product}', [ShopController::class, 'view'])->name('view');
 
@@ -39,6 +35,9 @@ Route::get('/login', [UserController::class, 'login'])->name('login');
 Route::get('/register', [UserController::class, 'register'])->name('register');
 
 Route::get('/profile', [UserController::class, 'profile'])->name('profile');
+
+Route::put('/product/toggle-status', [ProductController::class, 'toggleStatus']);
+
 
 
 

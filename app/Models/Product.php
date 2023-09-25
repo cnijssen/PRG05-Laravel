@@ -16,6 +16,7 @@ class Product extends Model
         'name',
         'size',
         'price',
-        'gender'
+        'gender',
+        'status'
     ];
 }

@@ -13,11 +13,37 @@
         @csrf 
         @method('post')
         <div class="insert">
+            <label>Image</label>
+            <select name="image">
+                <option value="" disabled selected></option>
+                <option value="Jordan_1_Chicago_High.png">Air Jordan 1 Chicago High</option>
+                <option value="Jordan_1_Mocha_High.png">Air Jordan 1 Mocha High</option>
+                <option value="Jordan_1_Fragment_High.png">Air Jordan 1 Fragment High</option>
+                <option value="Jordan_1_Taxi_Mid.png">Air Jordan 1 Taxi Mid</option>
+                <option value="Jordan_1_Diamond_Mid.png">Air Jordan 1 Diamond Mid</option>
+                <option value="Jordan_1_Sonics_Mid.png">Air Jordan 1 Sonics Mid</option>
+                <option value="Jordan_1_Phantom_Low.png">Air Jordan 1 Phantom Low</option>
+                <option value="Jordan_1_Olive_Low.png">Air Jordan 1 Olive Low</option>
+                <option value="Jordan_1_Fragment_Low.png">Air Jordan 1 Fragment Low</option>
+                <option value="AirForce_1_White_Mid.png">Air Force 1 Off-White White Mid</option>
+                <option value="AirForce_1_BrownPlaid_Mid.png">Air Force 1 Brown Plaid Mid</option>
+                <option value="AirForce_1_CaveStone_Mid.png">Air Force 1 Cave Stone Mid</option>
+                <option value="AirForce_1_SummitWhite_Low.png">Air Force 1 Summit White Low</option>
+                <option value="AirForce_1_MicaGreen_Low.png">Air Force 1 Mica Green Low</option>
+                <option value="AirForce_1_Sail_Low.png">Air Force 1 Off-White Sail Low</option>
+                <option value="AirMax_1_Travis.png">Air Max 1 Baroque Brown</option>
+                <option value="AirMax_1_Chili.png">Air Max 1 Chili</option>
+                <option value="AirMax_1_RuggedOrange.png">Air Max 1 Rugged Orange</option>
+            </select>
+        </div>
+        <div class="insert">
             <label>Category</label>
             <select name="category">
                 <option value="" disabled selected></option>
                 <option value="Air Jordan 1">Air Jordan 1</option>
+                <option value="Air Force 1">Air Force 1</option>
                 <option value="Air Max 1">Air Max 1</option>
+
             </select>
         </div>
         <div class="insert">
@@ -25,20 +51,13 @@
             <select name="top">
                 <option value="" disabled selected></option>
                 <option value="High">High</option>
+                <option value="Mid">Mid</option>
                 <option value="Low">Low</option>
             </select>
         </div>
         <div class="insert">
             <label>Colorway</label>
             <input type="text" name="name" autocomplete="off" />
-        </div>
-        <div class="insert">
-            <label>Size</label>
-            <input type="number" name="size" step="0.5" min="0" max="15" autocomplete="off" />
-        </div>
-        <div class="insert">
-            <label>Price</label>
-            <input type="number" name="price" step="0.01" max="99999.99" min="0" autocomplete="off"/>
         </div>
         <div class="insert">
             <label>Gender</label>
@@ -49,19 +68,12 @@
             </select>
         </div>
         <div class="insert">
-            <label>Image</label>
-            <select name="image">
-                <option value="" disabled selected></option>
-                <option value="Jordan_1_Chicago_High.png">Air Jordan 1 Chicago High</option>
-                <option value="Jordan_1_Mocha_High.png">Air Jordan 1 Mocha High</option>
-                <option value="Jordan_1_Fragment_High.png">Air Jordan 1 Fragment High</option>
-                <option value="Jordan_1_Phantom_Low.png">Air Jordan 1 Phantom Low</option>
-                <option value="Jordan_1_Olive_Low.png">Air Jordan 1 Olive Low</option>
-                <option value="Jordan_1_Fragment_Low.png">Air Jordan 1 Fragment Low</option>
-                <option value="AirMax_1_Travis.png">Air Max 1 Baroque Brown</option>
-                <option value="AirMax_1_Chili.png">Air Max 1 Chili</option>
-                <option value="AirMax_1_RuggedOrange.png">Air Max 1 Rugged Orange</option>
-            </select>
+            <label>Size</label>
+            <input type="number" name="size" step="0.5" min="0" max="15" autocomplete="off" />
+        </div>
+        <div class="insert">
+            <label>Price</label>
+            <input type="number" name="price" step="0.01" max="99999.99" min="0" autocomplete="off"/>
         </div>
         <div class="save">
             <input type="submit" value="List Sneaker" />

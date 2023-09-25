@@ -53,4 +53,20 @@ class ProductController extends Controller
         $product->delete();
         return redirect(route('profile'));
     }
+
+    public function toggleStatus(Request $request)
+    {
+        $product = Product::find($request->id);
+    
+        if(!$product) {
+            return response()->json(['message' => 'Product not found.'], 404);
+        }
+    
+        $statusValue = $request->input('status');  
+        $product->status = $statusValue ? 1 : 0;
+        $product->save();
+        
+    
+        return response()->json(['message' => 'Status updated successfully.']);
+    }
 }

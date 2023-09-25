@@ -20,6 +20,7 @@ return new class extends Migration
             $table->decimal('size', 3, 1);
             $table->decimal('price');
             $table->text('gender');
+            $table->integer('status')-> default('1');
             $table->timestamps();
         });
     }

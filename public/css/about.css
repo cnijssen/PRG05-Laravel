@@ -4,7 +4,8 @@
     font-style: italic;
     font-size: 75px;
     margin-left: 2%;
-    margin-top: 80px;;
+    margin-top: 70px;
+    padding-top: 30px;
 }
 
 p {
@@ -31,4 +32,10 @@ a {
     font-weight: bold;
     color: #a3afe4;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #f82e40;
+    transition: 0.3s;
 }

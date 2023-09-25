@@ -6,13 +6,14 @@ body {
 }
 
 h1 {
-    position: relative;
+    position: inherit;
     color: white;
-    font-weight: bolder;
+    font-weight: Bold;
     font-style: italic;
-    font-size: 30px;
+    font-size: 75px;
     margin-left: 2%;
-    margin-top: 90px;
+    margin-top: 70px;
+    padding-top: 30px;
 }
 
 .insert {
@@ -53,7 +54,7 @@ h1 {
 .login input{
     position: absolute;
     background-color: #BFC6EC;
-    margin-left: 5%;
+    margin-left: 55%;
     margin-top: 3%;
     color: white;
     font-weight: bold;

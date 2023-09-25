@@ -50,5 +50,5 @@ class UserController extends Controller
     $request->flash();
 
     return view('profile', compact('filteredProducts'));
-}
+    }
 }
